@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sea of Thieves</title>
+    <link rel="stylesheet" href="../css/menu-footer.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="../index.html">Legendary Showcase</a>
+        </div>
+
+        <a href="#" id="toggle" onclick="navMobile()"><i class="material-icons">menu</i></a>
+
+        <div class="search">
+            <input id="search" type="text" placeholder="Pesquise aqui...">
+            <a href="#"><i class="material-icons">search</i></a>
+        </div>
+
+        <ul id="menu">
+            <a href="../index.html">
+                <li>Home</li>
+            </a>
+            <a href="../index.html">
+                <li>Jogos</li>
+            </a>
+            <a href="../suporte.html">
+                <li>Suporte</li>
+            </a>
+        </ul>
+    </nav>
+</header>
+
+<nav class="navMobile">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">Jogos</a></li>
+        <li><a href="../suporte.html">Suporte</a></li>
+
+    </ul>
+</nav>
+
+<main>
+
+    <div class="slide-show-container">
+
+        <img src="../imagens/red-dead-redemption.png" alt="" class="Slides fade">
+        <img src="../imagens/anthem.png" alt="" class="Slides fade ">
+        <img src="../imagens/sea-of-thieves.png" alt="" class="Slides fade ">
+        <img src="../imagens/god-of-war.png" alt="" class="Slides fade ">
+        <img src="../imagens/far-cry.png" alt="" class="Slides fade">
+
+        <button class="arrow left-arrow" onclick="plusDivs(-1)"><i class="material-icons">keyboard_arrow_left</i>
+        </button>
+        <button class="arrow right-arrow" onclick="plusDivs(1)"><i class="material-icons">keyboard_arrow_right</i>
+        </button>
+    </div>
+
+
+    <div id="container-full">
+        <div class="principal-title">
+            <h1>Sea of Thieves</h1>
+        </div>
+        <div id="container">
+            <section class="game-conteudo">
+                <div class="game-image">
+                    <img src="../imagens/sea-of-thieves-content.png" alt="" class="image-content" style="width: 300px"; height="550px">
+                </div>
+                <div class="game-information">
+                    <div><b>Nome: </b><span class="nome"></span></div>
+                    <div><b>Ano: </b><span class="ano"></span></div>
+                    <div><b>Genero: </b><span class="genero"></span></div>
+                    <div><b>Sinopse: </b><span class="sinopse"></span></div>
+                    <div><b>Desenvolvedora: </b><span class="desenvolvedora"></span></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+</body>
+<footer>
+    <div class="social-media">
+        <h2>Nossas Redes Sociais</h2>
+        <div class="center-social">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>All rights reserved &copy; 2018</p>
+            <p>Project By Leo Faleiros</p>
+        </div>
+    </div>
+    <div class="copy"></div>
+</footer>
+<script src="../js/main.js"></script>
+<script>
+    carregarDados();
+    setTimeout(() => {
+        insereDados(1);
+    }, 100);
+</script>
+</html>
