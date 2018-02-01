@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="menu-footer.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+</head>
+
+<style>
+    .contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    .contato-title h1 {
+        font-size: 2em;
+    }
+
+    .contato-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 2em;
+    }
+
+    .contato-content form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input input {
+        border: 2px solid black;
+        outline: none;
+        border-radius: 3px;
+        width: 25%;
+        padding: 16px 15px;
+        transition: All .4s ease;
+    }
+
+    input:hover {
+        background-color: rgba(0,0,0,.8);
+        color: white;
+        zoom: 1.05;
+    }
+
+    input:focus {
+        background-color: rgba(0,0,0,.9);
+        color: white;
+    }
+
+    input:active {
+        background-color: black;
+        color: white;
+        zoom: 1.08;
+    }
+
+    .text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1em;
+    }
+
+    .text textarea {
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 10px;
+        transition: All .4s ease;
+        outline: none;
+    }
+
+    textarea:hover {
+        background-color: rgba(0,0,0,.8);
+        color: white;
+        zoom: 1.05;
+    }
+
+    textarea:focus {
+        background-color: rgba(0,0,0,.9);
+        color: white;
+    }
+
+    textarea:active {
+        background-color: black;
+        color: white;
+    }
+
+    .input-margin {
+        margin: 0.8em 0;
+    }
+
+    .btn-send {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5em;
+    }
+
+    .btn-send button {
+        border: 2px solid black;
+        padding: 15px 30px;
+        border-radius: 5px;
+        background-color: transparent;
+        color: black;
+        font-size: 1.05em;
+        transition: All .4s ease;
+        outline:  none;
+    }
+
+    button:hover {
+        color: white;
+        zoom: 1.05;
+        background-color: rgba(0,0,0,.8);
+    }
+
+    button:focus {
+        color: white;
+        background-color: rgba(0,0,0,.9);
+    }
+
+    button:active {
+        color: white;
+        background-color: rgba(0,0,0,1);
+        zoom: 1.08;
+    }
+
+    @media screen and (min-width: 1250px) and (max-width: 1600px) {
+        .input input {
+            width: 30%;
+        }
+    }
+
+    @media screen and (min-width: 950px) and (max-width: 1249px) {
+        .input input {
+            width: 38%;
+        }
+    }
+
+    @media screen and (min-width: 650px) and (max-width: 949px) {
+        .input input {
+            width: 50%  ;
+        }
+    }
+
+    @media screen and (min-width: 420px) and (max-width: 649px) {
+        .input input {
+            width: 75%;
+        }
+    }
+
+    @media screen and (min-width:300px ) and (max-width: 419px) {
+        .input input {
+            width: 90%;
+        }
+    }
+</style>
+
+<body>
+
+<header>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html">Legendary Showcase</a>
+        </div>
+
+        <a href="#" id="toggle" onclick="navMobile()"><i class="material-icons">menu</i></a>
+
+        <ul id="menu">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="index.html">
+                <li>Jogos</li>
+            </a>
+            <a href="suporte.html">
+                <li>Suporte</li>
+            </a>
+        </ul>
+    </nav>
+</header>
+
+<nav class="navMobile">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Jogos</a></li>
+        <li><a href="suporte.html">Suporte</a></li>
+
+    </ul>
+</nav>
+
+<main>
+
+    <div class="slide-show-container">
+
+        <img src="imagens/red-dead-redemption.png" alt="" class="Slides fade">
+        <img src="imagens/anthem.png" alt="" class="Slides fade ">
+        <img src="imagens/sea-of-thieves.png" alt="" class="Slides fade ">
+        <img src="imagens/god-of-war.png" alt="" class="Slides fade ">
+        <img src="imagens/far-cry.png" alt="" class="Slides fade">
+
+        <button class="arrow left-arrow" onclick="plusDivs(-1)"><i class="material-icons">keyboard_arrow_left</i>
+        </button>
+        <button class="arrow right-arrow" onclick="plusDivs(1)"><i class="material-icons">keyboard_arrow_right</i>
+        </button>
+    </div>
+
+
+    <div id="container-full">
+        <div class="principal-title">
+            <h1>Suporte</h1>
+        </div>
+        <div id="container">
+            <section class="contato">
+                <div class="contato-title">
+                    <h1>Nos informe o que está acontecendo <br> ou sua opinião...</h1>
+                </div>
+                <div class="contato-content">
+                    <form action="">
+                        <div class="input">
+                            <input type="text" placeholder="Informe seu Nome...">
+                            <input type="text" placeholder="Informe seu Email..." class="input-margin">
+                            <input type="text" placeholder="Informe o Assunto...">
+                        </div>
+                        <div class="text">
+                            <textarea name="" id="" cols="65" rows="10" placeholder="Informe sua opinião / sugestão..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="btn-send">
+                    <button>Enviar</button>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="social-media">
+        <h2>Nossas Redes Sociais</h2>
+        <div class="center-social">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>All rights reserved &copy; 2018</p>
+            <p>Project By Leo Faleiros</p>
+        </div>
+    </div>
+    <div class="copy"></div>
+</footer>
+</body>
+<script src="main.js"></script>
+</html>
